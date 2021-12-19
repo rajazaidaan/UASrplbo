@@ -21,6 +21,8 @@ Route::get('/register-vaccine/{doses}', [App\Http\Controllers\RegisterVaccineCon
 Route::post('/register-vaccine/store', [App\Http\Controllers\RegisterVaccineController::class, 'store'])->name('post-register');
 Route::get('/register-vaccine', [App\Http\Controllers\RegisterVaccineController::class, 'doses'])->name('doses');
 Route::get('/schedule', [App\Http\Controllers\ScheduleController::class, 'index'])->name('schedule');
+Route::get('/schedule/get', [App\Http\Controllers\ScheduleController::class, 'getSchedule'])->name('get-schedule');
+
 
 Route::prefix('admin')
     ->namespace('App\Http\Controllers\Admin')
