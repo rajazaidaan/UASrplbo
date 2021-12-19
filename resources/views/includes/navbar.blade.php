@@ -9,16 +9,12 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="{{ route('home') }}" class="flex items-center text-white font-bold text-2xl cursor-pointer">VACCINE</a>
-            {{-- <div class="flex items-center text-white font-bold text-2xl cursor-pointer"
-                onclick="location.href='{{ route('home') }}'; ">VACCINE
-            </div> --}}
         </div>
         <div id="navbar" class="navbar-collapse">
             <ul class="hidden md:flex items-center font-medium font-sans space-x-1">
                 @if (Route::current()->getName() == 'home')
                     <li class="py-5 px-3"><a href="#home" class="text-white hover:text-green-400">Beranda</a></li>
-                    <li class="py-5 px-3"><a href="#tatacara" class=" text-white hover:text-green-400">Cara
-                            Pendaftaran</a></li>
+                    <li class="py-5 px-3"><a href="#tentang" class=" text-white hover:text-green-400">Tentang</a></li>
                 @else
                 <li class="py-5 px-3"><a href="{{ route('home') }}" class="text-white hover:text-green-400">Beranda</a></li>
                 
